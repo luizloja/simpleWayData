@@ -19,21 +19,22 @@ some error or the response is not a valid json, than it will try until the numbe
 the constructor.
 
 # Another more robust Solution
-    This simple achiteture must solve the problem for a while. Another more robust architeture could be built 
-    using Rails, Sideqik and docker to integrate than. Maybe we could also use Redis if the external server 
-    take too long answer response.  
+This simple achiteture must solve the problem for a while. Another more robust architeture could be built 
+using Rails, Sideqik and docker to integrate than. Maybe we could also use Redis if the external server 
+take too long answer response.  
 
 # Intial Setup
-    To setup the project, please run: 
+To setup the project, please run: 
         bundle install 
 
 # Run the web server
-    To start the server, please run:
+To start the server, please run:
         bundle exec rackup -p 3000
-    After the server is running it is possible to use a browser or the command curl to access it at the url http://localhost:3000/ 
+After the server is running it is possible to use a browser or the command curl to access it at the url 
+        http://localhost:3000/ 
 
 # Run the tests
-    To run the tests, pelase make sure that the server is runing:
+To run the tests, pelase make sure that the server is runing:
         bundle exec rackup -p 3000
-    Then run the comand
+Then run the comand
         rspec request_data_service_spec.rb
