@@ -25,16 +25,23 @@ take too long answer response.
 
 # Intial Setup
 To setup the project, please run: 
+
         bundle install 
 
 # Run the web server
 To start the server, please run:
+
         bundle exec rackup -p 3000
+
 After the server is running it is possible to use a browser or the command curl to access it at the url 
+        
         http://localhost:3000/ 
 
 # Run the tests
 To run the tests, pelase make sure that the server is runing:
+
         bundle exec rackup -p 3000
+
 Then run the comand
+
         rspec request_data_service_spec.rb
